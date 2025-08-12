@@ -113,82 +113,6 @@ public class DoubleLinkedList<T> extends AbstractContainer<T> {
 		return list;
 	}
 
-	//@Override
-//	public Iterator iteratorRandom() {
-//		return new Iterator() {
-//			int initialChanges = changes;
-//			private int index = 0;
-//			private Random rand = new Random();
-//			//Im alreadyEnteredIndexRandom ist die zufällige Reihenfolge als int gespeichert.
-//			private int[] alreadyEnteredIndexRandom = createRandomOrder();
-//
-//			private int createRandomIndex() {
-//				return rand.nextInt(size());
-//			}
-//
-//			private int[] createRandomOrder() {
-//				int[] RandomOrder = new int[size()];
-//
-//				for (int i = 0; i < size(); i++) {
-//					int randomIndex = createRandomIndex();
-//					boolean containsRandom = true;
-//
-//					while (containsRandom) {
-//						containsRandom = false;
-//
-//						for (int j = 0; j < i; j++) {
-//							if (RandomOrder[j] == randomIndex) {
-//								containsRandom = true;
-//								randomIndex = createRandomIndex();
-//								break;
-//							}
-//						}
-//					}
-//					RandomOrder[i] = randomIndex;
-//				}
-//				return RandomOrder;
-//			}
-//
-//			// Diese Methode soll einen Iterator zurück geben, der den Container in
-//			// zufälliger Reihenfolge iteriert.
-//			public void iterateRandomly() {
-//				if (initialChanges != changes)
-//					throw new ConcurrentModificationException("Double Linked List " + this
-//							+ " wurde während des iterieren verändert und führt nun zum inkonistenten Zustand!");
-//
-//				for (int i = 0; i < alreadyEnteredIndexRandom.length; i++) {
-//					System.out.print(alreadyEnteredIndexRandom[i] + " ");
-//				}
-//			}
-//
-//			@Override
-//			public boolean hasNext() {
-//				if (initialChanges != changes)
-//					throw new ConcurrentModificationException("Double Linked List " + this
-//							+ " wurde während des iterieren verändert und führt nun zum inkonistenten Zustand!");
-//				try {
-//					get(index);
-//				} catch (IllegalGetException e) {
-//					return false;
-//				}
-//				return true;
-//			}
-//
-//			@Override
-//			public Object next() {
-//				if (initialChanges != changes)
-//					throw new ConcurrentModificationException("Double Linked List " + this
-//							+ " wurde während des iterieren verändert und führt nun zum inkonistenten Zustand!");
-//				if (!hasNext()) {
-//					throw new IllegalGetException("Index " + index
-//							+ " is out of Boundry of Double Linked List Container: Accepted boundry = [0 - " + size() + "]");
-//				}
-//				return alreadyEnteredIndexRandom[index++];
-//			}
-//
-//		};
-//		
-//		}
 	@Override
 	public Iterator<T> iteratorRandom() {
 	    // 1) Kopie aller aktuellen Elemente
@@ -304,3 +228,4 @@ class Node<T> {
 	}
 
 }
+
