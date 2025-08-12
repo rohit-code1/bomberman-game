@@ -12,18 +12,7 @@ public class LevelGeneratorLoader {
 	private static String className;
 	
 	public static LevelGenerator createGenerator(String name) {
-		try {
-//			Class<?>[] clazzPackageLevel; 
-			// Dieses if statement ist nicht wirklich effizient.
-			// Man bräuchte am besten eine Implementierung, wo man durch das level Paket nach den Klassen Namen iterieren könnte,
-			// damit man so durch einen Loop nacheinander überprüfen kann ob die Klasse (name) im Paket verfügbar ist oder nicht.
-			// Je nachdem wird eine NoSuchLevelGeneratorException geworfen oder nicht.
-			
-			//Keine Ahnung warum immer diese Exception geworfen wird obwohl die if Konditionen mit ! negiert werden.
-//			if (!(name.equals("de.tha.prog2.praktikum.game.level.BasicGenerator")) ||  
-//				!(name.equals("de.tha.prog2.praktikum.game.level.LevelGenerator"))) {
-//				throw new NoSuchLevelGeneratorException(name + " was not found! Please check if the class is even available!");
-//			} 
+		try { 
 			Class<LevelGenerator> clazz = (Class<LevelGenerator>) Class.forName(name);
 			String classConstructorName = name.replaceAll("de.tha.prog2.praktikum.game.level.", "");
 			className = classConstructorName;
@@ -87,3 +76,4 @@ public class LevelGeneratorLoader {
 	
 	 
 }
+
