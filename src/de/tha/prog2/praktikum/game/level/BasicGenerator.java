@@ -213,23 +213,6 @@ public class BasicGenerator implements LevelGenerator {
         System.out.println(gos.toString());
         bg.printGameField(bg.getField());
         
-//      int round = 1;
-//      Scanner sc = new Scanner(System.in);
-//      System.out.println("---------- Round 0 ----------\n");
-//      System.out.println(gos.toString()); 
-//      
-//      while(true) {
-//          System.out.println("---------- Round " + round + " ----------\n");
-//          gos.nextStep();
-//          System.out.println(gos.toString());
-//          System.out.flush();
-//          round++;
-//          System.out.print("Next Round? (y for yes, n for no): ");
-//          char input = sc.nextLine().toLowerCase().charAt(0);
-//          if(input != 'y') {
-//          	return;
-//          }
-//          System.out.print("\n");
-//      }
     }
 }
+
