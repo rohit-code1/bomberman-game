@@ -1,5 +1,5 @@
 # bomeberman-game
-English Version
+# English Version
 Bomberman Game – Console & JavaFX UI
 This Bomberman clone was developed in collaboration with a teammate as part of our college practical sessions, running in parallel with lecture courses. Throughout the semester, the project evolved week by week, following structured practical assignments that guided its continuous refinement and feature growth.
 
@@ -7,7 +7,7 @@ The game offers two fully interchangeable user interfaces: a nostalgic, text-bas
 
 With its modular architecture and clean Java implementation, the project demonstrates object-oriented design principles, adaptability, and the progression from simple prototypes to polished, feature-rich software.
 
-German Version
+# German Version
 Bomberman-Spiel – Konsole & JavaFX UI
 Dieser Bomberman-Klon entstand in Zusammenarbeit mit einem Teamkollegen im Rahmen von Hochschulpraktika, die parallel zu den Vorlesungen stattfanden. Über das gesamte Semester hinweg wurde das Spiel Schritt für Schritt erweitert und optimiert, basierend auf wöchentlichen Praktikumsaufgaben, die den Entwicklungsprozess strukturiert vorantrieben.
 
