@@ -1,4 +1,4 @@
-# bomeberman-game
+# Bomberman game
 
 ## English
 
